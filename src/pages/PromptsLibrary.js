@@ -34,7 +34,7 @@ const PromptsLibrary = () => {
       id: 4,
       title: "Impressionist Art Style",
       category: "Artistic",
-      image: "Art",
+      image: "https://res.cloudinary.com/dif9bbthf/image/upload/v1765097105/WhatsApp_Image_2025-12-07_at_2.07.48_PM_yssnee.jpg",
       prompt: "Apply impressionist painting style with visible brush strokes, vibrant color palette, light-focused composition, soft edges, and dreamy atmospheric quality"
     },
     {
@@ -162,7 +162,17 @@ const PromptsLibrary = () => {
               <div key={item.id} className="prompt-card">
                 <div className="card-front">
                   <div className="card-image">
-                    <span className="image-placeholder">{item.image}</span>
+                    {item.image && item.image.startsWith('http') ? (
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        loading="lazy"
+                        decoding="async"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      />
+                    ) : (
+                      <span className="image-placeholder">{item.image}</span>
+                    )}
                   </div>
                   <div className="card-info">
                     <span className="card-category">{item.category}</span>
