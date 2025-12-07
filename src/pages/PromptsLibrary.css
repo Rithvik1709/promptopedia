@@ -124,7 +124,7 @@
 /* Prompt Card */
 .prompt-card {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 6;
   border: 3px solid #000000;
   background-color: #ffffff;
   cursor: pointer;
@@ -153,8 +153,7 @@
   opacity: 0;
   transform: translateY(20px);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   padding: 2rem;
   background-color: #000000;
   color: #ffffff;
@@ -218,7 +217,9 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex: 1;
+  overflow: hidden;
 }
 
 .prompt-text {
@@ -227,7 +228,28 @@
   line-height: 1.6;
   color: #ffffff;
   font-weight: 300;
-  text-align: center;
+  text-align: left;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  flex: 1;
+}
+
+.prompt-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.prompt-text::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.prompt-text::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+}
+
+.prompt-text::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .copy-btn {
@@ -243,6 +265,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   align-self: center;
+  flex-shrink: 0;
 }
 
 .copy-btn:hover {
