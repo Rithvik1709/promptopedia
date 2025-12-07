@@ -32,10 +32,7 @@ const Footer = () => {
             <h4 className="footer-heading">Resources</h4>
             <ul className="footer-links">
               <li><a href="#documentation">Documentation</a></li>
-              <li><a href="#tutorials">Tutorials</a></li>
-              <li><a href="#community">Community</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#api">API</a></li>
+              <li><a href="#community">Submit a prompt</a></li>
             </ul>
           </div>
 
@@ -45,11 +42,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <span className="contact-label">Email:</span>
-                <a href="mailto:info@promptopedia.com">info@promptopedia.com</a>
+                <a href="mailto:info@promptopedia.com">rithvikbng@gmail.com</a>
               </li>
               <li>
                 <span className="contact-label">Support:</span>
-                <a href="mailto:support@promptopedia.com">support@promptopedia.com</a>
+                <a href="mailto:support@promptopedia.com">rithvikbng@gmail.com</a>
               </li>
               <li>
                 <span className="contact-label">GitHub:</span>
@@ -60,8 +57,6 @@ const Footer = () => {
             </ul>
             <div className="social-links">
               <a href="#twitter" className="social-link" aria-label="Twitter">𝕏</a>
-              <a href="#github" className="social-link" aria-label="GitHub">GitHub</a>
-              <a href="#discord" className="social-link" aria-label="Discord">Discord</a>
             </div>
           </div>
         </div>
@@ -71,7 +66,7 @@ const Footer = () => {
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
             <p className="copyright">
-              © 2024 Promptopedia. All rights reserved.
+              © 2025 Promptopedia. All rights reserved.
             </p>
             <div className="footer-bottom-links">
               <a href="#privacy">Privacy Policy</a>

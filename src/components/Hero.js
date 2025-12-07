@@ -1,7 +1,28 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const { user, signOut } = useAuth();
+
+  const handleSignIn = () => {
+    if (user) {
+      signOut();
+    } else {
+      navigate('/login');
+    }
+  };
+
+  const handleSignUp = () => {
+    navigate('/signup');
+  };
+
+  const handleGoToLibrary = () => {
+    navigate('/library');
+  };
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -12,8 +33,28 @@ const Hero = () => {
         </div>
         
         <div className="auth-buttons">
-          <button className="btn btn-signin">Sign In</button>
-          <button className="btn btn-signup">Sign Up</button>
+          {user ? (
+            <>
+              <div className="user-welcome">
+                Welcome, {user.email}
+              </div>
+              <button className="btn btn-signup" onClick={handleGoToLibrary}>
+                Browse Library
+              </button>
+              <button className="btn btn-signin" onClick={handleSignIn}>
+                Sign Out
+              </button>
+            </>
+          ) : (
+            <>
+              <button className="btn btn-signin" onClick={handleSignIn}>
+                Sign In
+              </button>
+              <button className="btn btn-signup" onClick={handleSignUp}>
+                Sign Up
+              </button>
+            </>
+          )}
         </div>
         
         <div className="hero-description">

@@ -46,6 +46,19 @@
   gap: 1.5rem;
   justify-content: center;
   margin-bottom: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-welcome {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #000000;
+  font-weight: 500;
+  padding: 0.875rem 1.5rem;
+  border: 2px solid #000000;
+  background-color: #f8f8f8;
+  letter-spacing: 0.02em;
 }
 
 .btn {

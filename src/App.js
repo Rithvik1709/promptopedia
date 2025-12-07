@@ -1,20 +1,34 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Hero from './components/Hero';
-import HowToUse from './components/HowToUse';
-import SneakPeak from './components/SneakPeak';
-import BeforeAfterSlider from './components/BeforeAfterSlider';
-import Footer from './components/Footer';
+import { AuthProvider } from './contexts/AuthContext';
+import LandingPage from './pages/LandingPage';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import PromptsLibrary from './pages/PromptsLibrary';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-      <HowToUse />
-      <SneakPeak />
-      <BeforeAfterSlider />
-      <Footer />
-    </div>
+    <Router>
+      <AuthProvider>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route 
+              path="/library" 
+              element={
+                <ProtectedRoute>
+                  <PromptsLibrary />
+                </ProtectedRoute>
+              } 
+            />
+          </Routes>
+        </div>
+      </AuthProvider>
+    </Router>
   );
 }
 
