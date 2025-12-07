@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToHowToUse = () => {
+    const element = document.getElementById('how-to-use');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -20,8 +30,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#home" onClick={scrollToTop}>Home</a></li>
+              <li><a href="#how-to-use" onClick={scrollToHowToUse}>How to use</a></li>
               <li><Link to="/privacy">Privacy</Link></li>
               <li><Link to="/terms">Terms</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
@@ -33,7 +43,7 @@ const Footer = () => {
             <h4 className="footer-heading">Resources</h4>
             <ul className="footer-links">
               <li><a href="#documentation">Documentation</a></li>
-              <li><a href="#community">Submit a prompt</a></li>
+              <li><a href="https://x.com/BngRithvik" target="_blank" rel="noopener noreferrer">Submit a prompt</a></li>
             </ul>
           </div>
 
@@ -53,7 +63,7 @@ const Footer = () => {
               </li>
             </ul>
             <div className="social-links">
-              <a href="#twitter" className="social-link" aria-label="Twitter">𝕏</a>
+              <a href="https://x.com/BngRithvik" className="social-link" aria-label="Twitter">𝕏</a>
             </div>
           </div>
         </div>

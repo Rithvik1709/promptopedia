@@ -26,7 +26,7 @@ const HowToUse = () => {
   ];
 
   return (
-    <section className="how-to-use">
+    <section className="how-to-use" id="how-to-use">
       <div className="how-to-container">
         <div className="section-header">
           <h2 className="section-title">How to Use</h2>

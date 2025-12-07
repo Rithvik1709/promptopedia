@@ -157,7 +157,7 @@ const PromptsLibrary = () => {
 
       {/* Footer */}
       <footer className="library-footer">
-        <p>© 2024 Promptopedia. All rights reserved.</p>
+        <p>© 2025 Promptopedia. All rights reserved.</p>
       </footer>
     </div>
   );
