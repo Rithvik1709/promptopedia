@@ -24,6 +24,7 @@ const Footer = () => {
               <li><a href="#browse">Browse Prompts</a></li>
               <li><a href="#categories">Categories</a></li>
               <li><a href="#about">About</a></li>
+              <li><Link to="/privacy">Privacy</Link></li>
               <li><Link to="/terms">Terms</Link></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -71,7 +72,7 @@ const Footer = () => {
               © 2025 Promptopedia. All rights reserved.
             </p>
             <div className="footer-bottom-links">
-              <a href="#privacy">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
               <span className="separator">•</span>
               <Link to="/terms">Terms of Service</Link>
               <span className="separator">•</span>
