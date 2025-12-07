@@ -21,8 +21,6 @@ const Footer = () => {
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links">
               <li><a href="#home">Home</a></li>
-              <li><a href="#browse">Browse Prompts</a></li>
-              <li><a href="#categories">Categories</a></li>
               <li><a href="#about">About</a></li>
               <li><Link to="/privacy">Privacy</Link></li>
               <li><Link to="/terms">Terms</Link></li>
@@ -52,10 +50,6 @@ const Footer = () => {
                 <a href="mailto:rithvikbng@gmail.com">rithvikbng@gmail.com</a>
               </li>
               <li>
-                <span className="contact-label">GitHub:</span>
-                <a href="https://github.com/promptopedia" target="_blank" rel="noopener noreferrer">
-                  @promptopedia
-                </a>
               </li>
             </ul>
             <div className="social-links">
@@ -76,7 +70,7 @@ const Footer = () => {
               <span className="separator">•</span>
               <Link to="/terms">Terms of Service</Link>
               <span className="separator">•</span>
-              <a href="#cookies">Cookie Policy</a>
+              <Link to="/cookies">Cookie Policy</Link>
             </div>
           </div>
         </div>
