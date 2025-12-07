@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -23,6 +24,7 @@ const Footer = () => {
               <li><a href="#browse">Browse Prompts</a></li>
               <li><a href="#categories">Categories</a></li>
               <li><a href="#about">About</a></li>
+              <li><Link to="/terms">Terms</Link></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </div>
@@ -42,11 +44,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <span className="contact-label">Email:</span>
-                <a href="mailto:info@promptopedia.com">rithvikbng@gmail.com</a>
+                <a href="mailto:rithvikbng@gmail.com">rithvikbng@gmail.com</a>
               </li>
               <li>
                 <span className="contact-label">Support:</span>
-                <a href="mailto:support@promptopedia.com">rithvikbng@gmail.com</a>
+                <a href="mailto:rithvikbng@gmail.com">rithvikbng@gmail.com</a>
               </li>
               <li>
                 <span className="contact-label">GitHub:</span>
@@ -71,7 +73,7 @@ const Footer = () => {
             <div className="footer-bottom-links">
               <a href="#privacy">Privacy Policy</a>
               <span className="separator">•</span>
-              <a href="#terms">Terms of Service</a>
+              <Link to="/terms">Terms of Service</Link>
               <span className="separator">•</span>
               <a href="#cookies">Cookie Policy</a>
             </div>

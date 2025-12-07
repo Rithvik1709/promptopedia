@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import PromptsLibrary from './pages/PromptsLibrary';
 import ProtectedRoute from './components/ProtectedRoute';
+import Terms from './pages/Terms';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/terms" element={<Terms />} />
             <Route 
               path="/library" 
               element={

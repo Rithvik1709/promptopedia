@@ -1,0 +1,127 @@
+.terms-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-hero {
+  background: #000000;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  border-bottom: 3px solid #ffffff;
+}
+
+.terms-hero-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.terms-kicker {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.terms-hero h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+.terms-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 300;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.terms-main {
+  flex: 1;
+  padding: 4rem 2rem;
+}
+
+.terms-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+}
+
+.terms-toc {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+}
+
+.terms-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.terms-toc a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.terms-toc a:hover {
+  color: #000000;
+  border-color: #000000;
+}
+
+.terms-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.terms-section h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.terms-section p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #333333;
+}
+
+@media (max-width: 900px) {
+  .terms-container {
+    grid-template-columns: 1fr;
+  }
+  .terms-toc {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .terms-hero {
+    padding: 3rem 1.5rem;
+  }
+  .terms-main {
+    padding: 2.5rem 1.25rem;
+  }
+  .terms-hero h1 {
+    font-size: 2.1rem;
+  }
+}
