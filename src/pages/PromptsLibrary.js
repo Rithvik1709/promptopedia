@@ -71,6 +71,20 @@ const PromptsLibrary = () => {
       category: "Style",
       image: "https://res.cloudinary.com/dif9bbthf/image/upload/v1765098180/WhatsApp_Image_2025-12-07_at_2.07.49_PM_ppgfil.jpg",
       prompt: "Overlay strong VHS tape distortion while preserving original image clarity underneath. Include jittering horizontal tears, warped frame edges, rainbow chroma shifts, grain, and static bursts. Deep crushed shadows with purple-blue hues. Maintain photo identity — only add film degradation."
+    },
+    {
+      id: 10,
+      title: "ChatGPT Wrapped 2025",
+      category: "Design",
+      image: "https://res.cloudinary.com/drjvgbj6c/image/upload/v1765301350/WhatsApp_Image_2025-12-09_at_10.54.50_PM_muyosp.jpg",
+      prompt: "Create a boy-style scrapbook aesthetic “My ChatGPT Wrapped 2025” design using warm earthy tones, deep blues, greens, and oranges on a kraft-paper textured background, decorated with playful doodles like game controllers, stars, arrows, sports icons, and washi tape. Include nine panels: a bold handwritten title “My ChatGPT Wrapped 2025,” a Pixar-style animated portrait of the boy from the uploaded photo inside a Polaroid frame, a Top Chat Genres box with boyish icons, a big bold Total Messages number, a Fun Chat Persona of the Year label with a magical or tech-themed vibe, a Chat Vibes section with short mood words like Curious, Focused, Helpful, and Motivated, a Core Personality Stats panel with horizontal bars in blue and green, and a short handwritten Message to Future Self. Use cut-paper layering, soft shadows, sticker-style accents, and a clean but adventurous boy energy throughout, with an optional tiny “Powered by ChatGPT” sticker or small trophy/rocket icon."
+    },
+    {
+      id: 11,
+      title: "Wrapped Scrapbook 2025",
+      category: "Design",
+      image: "https://res.cloudinary.com/drjvgbj6c/image/upload/v1765301350/WhatsApp_Image_2025-12-09_at_10.55.51_PM_czb47k.jpg",
+      prompt: "Create a \"My ChatGPT Wrapped 2025\" design in a cute scrapbook aesthetic using pastel colors, doodles, stickers, and mixed-paper textures. Include 6-9 panels with: 1) Title: My ChatGPT Wrapped [YEAR], 2) Disney/Pixar-style animated portrait from the uploaded photo in a Polaroid frame, 3) Top Chat Genres showing the user's main chat themes, 4) Total Messages as a big bold number, 5) Fun Chat Persona of the Year with a creative title, 6) Chat Vibes This Year listing 4-6 short mood descriptors, 7) Core Personality Stats with 5-7 traits and percentage levels, 8) Message to Future Self with a short positive note. Style: warm, cozy, celebratory vibe with handwritten fonts, cute hearts, sparkles, rainbows, washi tape, sticky notes, and stickers. Optional: tiny \"Powered by ChatGPT\" sticker or a next-year goals box."
     }
   ];
 
